@@ -1,0 +1,28 @@
+@import './outils'; 
+@import './header'; 
+@import './Home'; 
+@import './About'; 
+@import './Skills'; 
+@import './Projects'; 
+@import './contact'; 
+@import './footer'; 
+@import './responsive';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+body{
+    background: $color1; 
+    color: set-color($color1);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    text-transform: capitalize;
+}
+.About , .Skills , .Projects , .Contact{
+   display: none;
+}
+h1,h2,h3{
+    font-weight: 400;
+}
+main{
+    height: 100%;
+    width: 100%;
+}

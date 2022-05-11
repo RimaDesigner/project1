@@ -1,0 +1,76 @@
+@include media-md{
+    nav{
+        visibility: hidden;
+        justify-content: center;
+        background: $color1;
+        position: fixed;
+        height: 100%;
+        overflow: hidden;
+        .menu-nav{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            list-style-type: none;
+            overflow: hidden;
+            transform: translateY(-100%);
+            &.open{
+                transform: translateY(0);
+            }
+            &_item{
+                padding: 1rem 0;
+                transform: translateX(100vw);
+                &.open{
+                    transform: translateX(0);
+                }
+            }
+           
+
+        }
+        &.open{
+            visibility: visible;
+            overflow: scroll;
+        }
+    }
+    .menu-btn{
+        visibility: visible!important;
+
+        .button-resp{
+            &.open{
+                transform: rotate(720deg);
+                background: transparent;
+                &::before{
+                    transform: rotate(45deg) translate(5px , 8px);
+                }
+                &::after {
+                    transform: rotate(-45deg) translate(3px ,-7px);
+                    
+                }
+            }
+        }
+    }
+    .project_items{
+        grid-template-columns: repeat(1,1fr)!important;
+    }
+   
+    .Contact {
+        height: auto; 
+        .contact-lists{
+            grid-gap: unset;
+            .contact { 
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                padding: 2rem;
+                i{
+                    padding: unset;
+                }
+                .text-secondary{
+                   font-size: 18px;
+                   padding: unset;
+                }
+        
+            }
+        }
+    }
+}

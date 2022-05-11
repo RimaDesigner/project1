@@ -1,0 +1,44 @@
+$color1: #272727; 
+$color2: #9f8938; 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@function set-color($color){
+    @if(lightness($color)>40%){
+        @return #000; 
+    }@else
+    {
+        @return #fff; 
+    }
+}
+a{
+    color: set-color($color1);
+    text-decoration: none;
+}
+
+@mixin media-md {
+    @media screen and (max-width:767.98px) {
+        
+        @content; 
+    }
+    
+}
+@mixin media-lg {
+    @media screen and (min-width:1024px) {
+        
+        @content; 
+    }
+    
+}
+@mixin media-xl {
+    @media screen and (min-width:1600px) {
+        
+        @content; 
+    }
+    
+}
+

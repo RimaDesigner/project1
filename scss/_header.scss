@@ -1,0 +1,87 @@
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    nav{
+        width: 100vw;
+        opacity: 0.98;
+        justify-content: right;
+        display: flex;
+       
+        .menu-nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: transparent;
+            list-style-type: none;
+            padding: 2rem;
+            transition: all 0.5s ease-in-out;
+            
+            &_item{
+                padding-right: 2rem;
+                transition: all 0.5s ease-in-out;
+               
+            }
+            &_link{
+                transition: all 0.5s ease-in-out;
+                font-size: 18px;
+                font-weight: 300;
+               
+                &:hover{
+                    color: $color2;
+                   
+                    
+                }
+                &.active{
+                    color: $color2;
+                }
+             
+
+            }
+            
+        }
+      
+    }
+    .menu-btn{
+        position: absolute;
+        z-index: 1;
+        right: 1rem;
+        top: 1rem;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        transition:  all 0.5s ease-in-out;
+        visibility: hidden;
+
+        .button-resp{
+            position: absolute;
+            top: 0.5s;
+            right: 0;
+            width: 28px;
+            height: 3px;
+            background: set-color($color1);
+            transition:  all 0.5s ease-in-out;
+            &::before{
+                content:''; 
+                position: absolute;
+                top: -8px;
+                width: 28px;
+                height: 3px;
+                background: set-color($color1);
+                transition: all 0.5s ease-in-out;
+            }
+            &::after{
+                content:''; 
+                position: absolute;
+                top: 8px;
+                width: 28px;
+                height: 3px;
+                background: set-color($color1);
+                transition: all 0.5s ease-in-out;
+            }
+          
+        }
+    }
+
+}

@@ -1,0 +1,33 @@
+.footer-items{
+    .social-links{
+      position: fixed;
+      bottom: 0.4rem;
+      left: 0.7rem;
+      padding: 15px 0;
+        a{
+            padding: 0 0.4rem;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                color: $color2;
+            }
+        }  
+    }
+    span{
+        font-size: 18px;
+        position: fixed;
+        bottom: 0.4rem;
+        right: 1rem;
+        text-align: right;
+        padding: 17px;
+        color: set-color($color1);
+    }
+    .rotate{
+        display: flex;
+        flex-direction: column;
+    }
+    .span-rotate{
+        transform: rotate(90deg)
+        translate(-3rem , -5rem); 
+    }
+
+}

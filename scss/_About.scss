@@ -1,0 +1,46 @@
+.About{
+    padding-bottom: 2rem;
+    &-bio_image{
+        height: 75vh;
+        width: 100%;
+        background: linear-gradient(to right, rgba($color1 , 0.9), rgba($color1 , 0.3)),
+        url('../img/banner.png') center top ; 
+        background-size: cover;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        .About_text{
+            width: 70%;
+            text-align: center;
+            .text2{
+                padding-bottom: 2rem;
+                color: $color2;
+            }
+            p{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    .experiences{
+        display: grid;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-gap:2rem; 
+
+        .exp{
+            background:lighten($color1,10%);
+            padding: 0.5rem;
+            border-bottom: 5px solid $color2;
+
+            h2{
+                margin: 0.5rem 0;
+            }
+            h6{
+                margin: 0.3rem 0;
+            }
+        }
+    }
+}
